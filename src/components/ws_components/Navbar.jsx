@@ -81,10 +81,13 @@ const Navbar = () => {
             </Link>
             <Link to="/wishlist">
               <FavoriteBorderOutlined
-                style={{ marginRight: "5px", cursor: "pointer" }}
+                style={{ marginRight: "5px", cursor: "pointer"}}
               />
             </Link>
-            <SearchOutlined style={{ cursor: "pointer" }} />
+            <div className="search-box">
+              <button className="btn-search"><i className="fas fa-search"></i></button>
+              <input type="text" className="input-search" placeholder=" Cherche Ici ....."/>
+            </div>
           </div>
           <Link to="/creer-un-compte" className="d-sm-block d-none">
             <Button>Créer un compte</Button>
